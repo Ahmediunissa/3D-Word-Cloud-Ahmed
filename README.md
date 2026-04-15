@@ -1,15 +1,10 @@
 # 3D Word Cloud Project
 
 ## Overview
-This project is a full-stack application that visualizes topics from a news/article URL as a 3D word cloud.
 
-Users enter a URL, and the system:
-- Scrapes article content
-- Extracts keywords using TF-IDF
-- Sends data to frontend
-- Displays interactive 3D word cloud
+This is a full-stack project that takes a news or article URL and converts its content into a 3D word cloud visualization.
 
----
+The idea is simple: you enter a URL, the system reads the content from the page, extracts the most important words, and displays them in an interactive 3D space.
 
 ## Tech Stack
 
@@ -19,26 +14,17 @@ Frontend:
 - Three.js
 
 Backend:
-- FastAPI
-- Python
-- BeautifulSoup (web scraping)
-- Scikit-learn (TF-IDF)
+- FastAPI (Python)
+- BeautifulSoup (for web scraping)
+- Scikit-learn (TF-IDF keyword extraction)
 
----
+## How It Works
 
-## How to Run
-
-### Backend
-cd backend  
-pip install -r requirements.txt  
-uvicorn main:app --reload  
-
-### Frontend
-cd frontend  
-npm install  
-npm start  
-
----
+1. User enters a URL in the frontend
+2. Backend fetches and extracts article content
+3. TF-IDF is used to find important keywords
+4. Backend sends words and their weights to the frontend
+5. Frontend displays them as a rotating 3D word cloud
 
 ## API Endpoint
 
@@ -51,19 +37,36 @@ Request:
 
 Response:
 [
-  { "word": "data", "weight": 0.8 }
+  {
+    "word": "avoid",
+    "weight": 0.2886751345948129
+  },
+  {
+    "word": "documentation",
+    "weight": 0.2886751345948129
+  },
 ]
 
----
-
 ## Features
-- URL input system
-- Web scraping
-- TF-IDF keyword extraction
-- 3D rotating visualization
-- Full-stack integration
 
----
+- URL input system
+- Web scraping from article pages
+- TF-IDF keyword extraction
+- Interactive 3D word cloud visualization
+- Full-stack integration between React and FastAPI
+
+## How to Run
+
+Backend:
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+Frontend:
+cd frontend
+npm install
+npm start
 
 ## Author
-Ahmed Unissa
+
+Ahmedunissa
