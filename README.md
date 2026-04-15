@@ -67,6 +67,20 @@ cd frontend
 npm install
 npm start
 
+## Sample Test URLs (For Quick Testing)
+
+You can use the following URLs to test the application:
+
+- https://en.wikipedia.org/wiki/Artificial_intelligence
+- https://en.wikipedia.org/wiki/Machine_learning
+- https://www.bbc.com/news
+
+These are good examples because they contain enough text for keyword extraction and visualization.
+
 ## Author
 
+<<<<<<< HEAD
 Ahmedunissa
+=======
+Ahmedunissa
+>>>>>>> 0c914c14f900ecb756ec8597613543180a2a5c9e
