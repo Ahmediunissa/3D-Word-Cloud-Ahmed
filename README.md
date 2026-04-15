@@ -79,8 +79,4 @@ These are good examples because they contain enough text for keyword extraction 
 
 ## Author
 
-<<<<<<< HEAD
 Ahmedunissa
-=======
-Ahmedunissa
->>>>>>> 0c914c14f900ecb756ec8597613543180a2a5c9e
